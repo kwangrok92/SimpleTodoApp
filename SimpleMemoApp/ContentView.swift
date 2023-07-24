@@ -41,7 +41,7 @@ struct ContentView: View {
     WithViewStore(store) { viewStore in
       VStack {
         HStack {
-          Button("추가") {
+          Button("메모 추가") {
             viewStore.send(.addTodo)
           }
         }
