@@ -1,13 +1,9 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  SimpleMemoApp
 //
 //  Created by 김광록 on 2023/07/24.
 //
-
-// ContentView.swift
-
-// ContentView.swift
 
 import SwiftUI
 import ComposableArchitecture
@@ -70,7 +66,7 @@ extension Array {
 }
 
 // 메인 뷰 정의
-struct ContentView: View {
+struct HomeView: View {
   let store: Store<AppState, AppAction>
   
   var body: some View {
@@ -119,9 +115,9 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(
+    HomeView(
       store: Store(
         initialState: AppState(
           todos: ["Buy groceries", "Go for a walk", "Read a book", "1 day 1 commit"],

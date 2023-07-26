@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct SimpleMemoAppApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView(store: Store(initialState: AppState(todos: []),
+      HomeView(store: Store(initialState: AppState(todos: []),
                                reducer: appReducer,
                                environment: ()))
     }
